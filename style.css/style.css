@@ -6,34 +6,41 @@
     list-style-type: none;
 }
 
-#header {
-    min-width: 200px;
+ #header {
+    background-color: #cc2e2e;
+
+}
+.navbar{
+    background-color: #717683;
     width: 100%;
     align-items: center;
-    position: relative;
+    width: 100%;
+    margin: 0 auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
-    /* background-color: beige; */
+}
+body{
+    margin: 0 auto;
+
 }
 .row-limit-size{
     width: 100%;
-    align-items: center;
     display: flex;
-    height: 100px;
+    height: 70px;
 }
 
-#nav-menu{
+nav{
+    transition: .1S all ease-in-out ;
     display: block;
     width: 100%;
-    position: absolute;
     align-items: center;
     top: 200px;
 }
-#nav-menu ul li{
+nav ul li{
     margin-bottom: 100px;
 
 }
-#nav-menu ul li a {
-    display: block;
+nav ul li a {
+    display: none;
     font-size: 1.5rem;
     text-align: center;
     margin: 0 auto;
@@ -42,123 +49,358 @@
 
 
 }
-#nav-menu.active ul li a{
-    display: block;
-    font-size: 1.5rem;
-    position: absolute;
-    margin: 0 auto;
-    
-
-    
-}
-
 
 .logo{
-    width: 30px;
-    margin: 10px 15px;
-    width: 50px;
-    height: 50px;
+    display: flex;
+    padding: 10px;
 }
 
 .txt-logo {
- 
-    height: 70px;
-    font-size: 2rem;
+    margin-top: 40px;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     color:#1F4096 ;
-    margin: 10px;
-    padding: 25px 0 0 0 ;
 }
 
 .logo img {
-    margin: 10px 15px;
     width: 50px;
-    height: 50px;
-    width: 100%;
-
 }
 
 #burger{
     position: absolute;
-    right: 0;
-    top:  25px;
+    right: 10px;
+    top:  10px;
 }
 
 #burger img{
     width: 45px;
  
 }
+#main{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 
-@media screen and (min-width:1280px){
+
+}
+.first-main{
+    width: 100%;
+    margin-top: 25px;
+    justify-content: center;
+    
+  
+    
+    
+}
+.img-first-main{
+    margin: 0 auto;
+    width: 90%;
+
+    background-image: url(../img/gites-dordogne-piscine-grande-maison-1024x683.jpg);
+    
+    height: 350px;
+    box-shadow: 0px 4px 6px #1f419679;
+    background-size: cover;
+    border: 1px solid #1F4096;
+    border-radius: 19px;
+    
+}
+h1{
+    color: #1F4096;
+    background-color: #fff;
+    text-shadow: 0px 4px 6px #1f419664;
+    font-size: 2rem;
+    margin: 25px auto ;
+}
+
+.text-first-main h2{
+    display: none;
+    border: 2px solid red;
+    color: #1F4096;
+    font-size: 2rem;
+}
+
+.seachbar{
+    max-width: 100%;
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+
+}
+.seachbar div{
+    display: flex;
+    max-width: 100%;
+    width: 310px;
+
+    margin: 10px auto ;
+    border: 2px solid #1F4096;
+    border-radius: 10px 0 10px 0;
+    padding: 0px;
+    position: relative;
+
+    
+}
+
+.seachbar div input{
+    max-width: 100%;
+    width: 310px;
+    border: none;
+    margin: 0px 20px auto ;
+    padding: 10px;
+
+}
+.seachbar  img{
+    vertical-align: center;
+    width: 20px;
+    margin: 1px auto 0 3px;
+    margin-top: 5px;
+    position: absolute;
+}
+.seachbar .btn, .btn1 {
+    cursor: pointer;
+    color: #fff;
+    background-color: #1F4096;
+    width: 150px;
+}
+.btn1{
+    width: 150px;
+    height: 40px;
+    margin: 10px auto ;
+    border: 2px solid #1F4096;
+    border-radius: 10px 0 10px 0;
+    padding: 0px;
+    position: relative;
+}
+/* GITES EN TANDENCE */
+
+.container   {
+    margin: 70px auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;    
+    border: 2px solid #1F4096;
+    border-radius: 15px 0 15px 0;
+    box-shadow: 0px 4px 6px #05163f;
+    position: relative;
+    background-color: #1F4096;
+}
+
+.cards img{
+    position: relative;
+    margin:10px 5px auto;
+    width: 45%;
+    
+}
+.txt-gites{
+    width: 150px;
+    top: 70px;
+    left: 15px;
+    font-size: 11px;
+    position: absolute;
+    border: 2px solid black;
+}
+.txt-gites h2{
+    width: 150px;
+    font-size: 0.5rem;
+    color: #ffffff;
+    font: caption;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.txt-gites p{
+    color: #ffffff;
+    font: bold;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+/* section reservez vos prochaine vacances */
+.container-2{
+    margin: 100px auto;
+}
+.img-logo{
+    margin-bottom:40px;
+
+}
+.container-2 h3{
+    margin: 50px auto;
+}
+.container-2 .container{
+    padding: 20px;
+}
+/* Formulaire */
+.formulaire{
+    width: 100%;
+    margin: 100px auto;
+    justify-content: center;
+}
+label{
+    margin: 30px ;
+    font-size: 2rem;
+    justify-content: center;
+    color: #1F4096;
+    display: flex;
+}
+.formulaire input {
+    color: #fff;
+    text-align: center;
+}
+input::placeholder{
+    color: #ffffff;
+    text-align: center;
+    opacity: 1;
+}
+
+/* footer */
+footer{
+    background-color: #1F4096;
+    height: 100px;
+    width: 100%;
+}
+footer p{
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media screen and (min-width:950px){
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        width: 100%;
     }
     #header{
-
         width: 100%;
-        align-items: center;
-        /* background-color: rgb(4, 30, 161); */
-        height: 100px;
+        border: 1px solid red;
+        max-width: 100%;
+        width: 100%;
+        
+        
+    }
+    .navbar{
+        width: 100%;
+ 
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
-    }
-    .row-limit-size{
-        width: 100%;
-        top: 0;
-        height: 100px;
+        background-color: rgba(0, 0, 0, 0.438);
+        
 
     }
-    .logo{
-        height: 50px;
+    nav{
+        max-width: 100%;
+        border: 1px solid green;
+        margin-top: -100px;
+        background-color: #fff; 
+        
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 300px;
         height: 100px;
-        margin: 0 0 0 15px;
+        margin-top: 100px;
+        
+    }
+
+    nav ul li  {
+        margin-right: 20px;
+        background-color: #cc2e2e;
+        padding-top: 50px;
+        width: 200px;
+        
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+        
+    }
+
+    .logo{
+        
+        display: flex;
+        border: 1px solid black;
+        background-color: aquamarine;
+
+
     }
     .logo img {
-        margin: 10px 0;
-        width: 60px;
-        height: 60px;
-
+        width: 50px;
     }
   
-    .txt-logo span {
-        width: 100%;
-        height: 70px;
-        top: 0;
-        font-size: 2rem;
+    .txt-logo  {
+        font-size: 1rem;
         font-family: Arial, Helvetica, sans-serif;
-        color:#1F4096 ;
-        margin: 0px;
-        padding: 25px 25px 25px 0;
+        font: bolder;
+        color:#1F4096;
+        border:1px solid blue;
+        height: 100px;
 
     }
     #burger{
         display: none;
-    }
+    } */
     /* navbar menu  */
-
-
-    
-    #nav-menu{
-    width: 100%;
-    height: 70px;
-    border: 1px solid black;
-    height: 100px;
-  
+    /* .navbar{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background-color: #c2cbb4;
+        
 
     }
-    #nav-menu ul li{
+    #nav-menu{
+        width: 100%;
+        position: relative;
+        top: 0;
+
+        height: 100%;
+        border: 1px solid rgb(0, 237, 115);
+        
+        font-family: Arial, Helvetica, sans-serif;
+        font: 600;
+    }
+    
+
+    #nav-menu ul{
+        top: 0;
+        width: 100%;
+        justify-content: space-around;
         display: flex;
+        border: 1px solid red;
+        height: 100px;
+            
+        
+
+    }
+    #nav-menu ul li{  
+        width:200px;
+        height: 100%;
+ 
+        margin-top: 25px;
+        border: 1px solid black;
+        
+        margin-left: 100px;
+
 
     }
     #nav-menu ul li a {
-    font-size: 1.5rem;
-    margin: 0 ;
-    font-size: 2rem;
-
+        display: inline;
+        font-size: 2rem;
+    } */
     
 
-
-    }
-    
-}
