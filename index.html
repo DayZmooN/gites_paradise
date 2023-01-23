@@ -16,9 +16,15 @@
                 <div class="logo">
                     <a href="#"><img src="./img/gites_paradise.png" alt="logo"></a>
                     <span class="txt-logo">Gites paradise</span>
+                    <div id="burger">
+                        <a href="#"><img src="./img/burger.png" alt="burger"></a>
+                    </div>
                 </div>
                 <div>
-                    <nav>
+                    <nav id="menu">
+                        <div id="crois">
+                            <a href="#"><img src="./img/crois.png"" alt=" crois"></a>
+                        </div>
                         <ul>
                             <li><a href="#">Nos Offres</a></li>
                             <li><a href="">Déposer</a></li>
@@ -26,164 +32,171 @@
                             <li><a href="#">Se Connecter</a></li>
                         </ul>
 
+
                     </nav>
-                </div>
-                <div id="burger">
-                    <a href="#"><img src="./img/burger.png" alt="burger"></a>
+
+
+
                 </div>
             </div>
         </div>
-    </header>
 
-    <main id="main">
-        <section class="first-main">
+        <main id="main">
+            <section class="first-main">
 
-            <div class="text-first-main">
-                <h1>Gites le plus populaire</h1>
-
-                <h2>Bienvenue
-                    chez Gites paradise
-                    votre Experience sera
-                    un Paradis
-                    à Bon Prix </h2>
-            </div>
-            <div class="img-first-main"></div>
-            <div class="text-first-main-desktop">
-
-            </div>
-        </section>
-
-        <section class="seachbar">
-            <h1>Nos Gites en france</h1>
-            <form action="#" method="post">
-                <div>
-                    <img src="./img/kisspng-computer-icons-magnifying-glass-clip-art-find-5b0521feec8b21.3679188415270630389689.png" " alt="">
-                    <label for=" pays"></label>
-                    <input type="text" placeholder="France">
+                <div class="text-first-main">
+                    <!-- <h1>Gites le plus populaire</h1> -->
+                    <div class="h1-header">
+                        <h1>Bienvenue <br>
+                            chez Gites paradise <br>
+                            votre Experience sera <br>
+                            un Paradis
+                            à Bon Prix </h1>
+                    </div>
                 </div>
-                <div>
-                    <img src="./img/kisspng-solar-calendar-symbol-computer-icons-encapsulated-calendar-icon-5ac41db8b0bae7.2492870115228021047239.png"
-                        alt="">
-                    <label for="dates"></label>
-                    <input type="datetime" name="dates" id="dates" placeholder="Dates">
-                </div>
+            </section>
 
-                <div>
-                    <img src="./img/12354-NOC8CI.jpg" alt="">
-                    <label for="nbp"></label>
-                    <input type="number" name="nbp" id="nbp" placeholder="Nombres de Personnes" img
-                        src="./img/burger.png">
-                </div>
+            <section class="seachbar">
+                <h1>Nos Gites en france</h1>
+                <form action="#" method="post">
+                    <div class="card-logo logo">
+                        <div class="float-logo">
+                            <label for=" pays">Region</label>
+                            <input class="btn1" type=" text" placeholder="France" img src>
+                        </div>
+                        <div>
+                            <label for="start">Dates</label>
+                            <input class="btn1" type="date" name="dates" id="start">
+                        </div>
+                        <div>
+                            <label for="nbp">Nombre de personnes</label>
+                            <input class="btn1" type="number" name="nbp" id="nbp" placeholder="Nombre de personnes">
+                        </div>
+                    </div>
 
-            </form>
-            <div class="btn">
+
+                </form>
                 <label for="btn"></label>
                 <input class="btn1" type="submit" value="Envoyer">
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div class="container">
-                <div class="cards">
-                    <div>
-                        <img src="./img/gites-dordogne-piscine-grande-maison-1024x683.jpg" alt="gites">
-                        <div class="txt-gites">
+            <section>
+                <h1>Gites en Tendance</h1>
+                <div class="container">
+                    <div class="cards">
+                        <div>
+                            <img src="./img/gites-dordogne-piscine-grande-maison-1024x683.jpg" alt="gites">
+                            <div class="txt-gites">
+                                <h2>Gite en bretagne</h2>
+                                <p>grand gite qui peut acceuilire 12 personnes</p>
+                            </div>
+
+                            <img src="./img/gite-eco-scaled.jpeg" alt="gite">
                             <h2>Gite en bretagne</h2>
                             <p>grand gite qui peut acceuilire 12 personnes</p>
                         </div>
-
-                        <img src="./img/gite-eco-scaled.jpeg" alt="gite">
-                        <h2>Gite en bretagne</h2>
-                        <p>grand gite qui peut acceuilire 12 personnes</p>
-                    </div>
-                    <div><img src="./img/gites-dordogne-piscine-grande-maison-1024x683.jpg" alt="">
-                        <img src="./img/Gite-France-2-300x203.jpeg" alt="">
+                        <div>
+                            <img src="./img/gites-dordogne-piscine-grande-maison-1024x683.jpg" alt="">
+                            <div class="txt-gites">
+                                <h2>Gite en bretagne</h2>
+                                <p>grand gite qui peut acceuilire 12 personnes</p>
+                            </div>
+                            <img src="./img/Gite-France-2-300x203.jpeg" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
-
-        </section>
-        <section>
-            <div>
-                <h1>Gites en Tendance</h1>
-            </div>
-            <div>
-                <img src="./img/piscine-champdepere-bis.jpg" alt="" height="200px">
-            </div>
-        </section>
-        <!--Réservez vos vacances -->
-        <section class="container-2">
-
-            <div>
-                <h1>Réservez vos prochaines vacances en toute simplicité</h1>
-            </div>
-            <div>
-                <img class="img-logo" src="./img/icons_holiday.png" alt="" height="50px">
-            </div>
-
-            <div class="container">
-                <h3>Planifier vos vacances n'a jamais été aussi simple</h3>
-                <p>Plutôt que de chercher pendant des heures sur d’innombrables sites internet, comparez et économisez
-                    avec MaisonDeVacances, qui vous dévoile les meilleures promotions du moment pour voyager au meilleur
-                    prix.</p>
-            </div>
-            <div>
-                <img class="img-logo" src="./img/icons_holiday.png" alt="" height="50px">
-            </div>
-
-            <div class="container">
-                <h3>Planifier vos vacances n'a jamais été aussi simple</h3>
-                <p>Plutôt que de chercher pendant des heures sur d’innombrables sites internet, comparez et économisez
-                    avec MaisonDeVacances, qui vous dévoile les meilleures promotions du moment pour voyager au meilleur
-                    prix.</p>
-            </div>
-
-            <div>
-                <img class="img-logo" src="./img/icons_holiday.png" alt="" height="50px">
-            </div>
-
-            <div class="container">
-                <h3>Planifier vos vacances n'a jamais été aussi simple</h3>
-                <p>Plutôt que de chercher pendant des heures sur d’innombrables sites internet, comparez et économisez
-                    avec MaisonDeVacances, qui vous dévoile les meilleures promotions du moment pour voyager au meilleur
-                    prix.</p>
-            </div>
-            <div>
-                <form action="#"></form>
-                <label for="btn"></label>
-                <input class="btn1" type="submit" value="Envoyer">
-            </div>
-
-            </div>
-        </section>
-
-        <section>
-            <div>
-                <h1>Contact</h1>
-            </div>
-            <div class="formulaire">
-                <form action="#" method="post">
-                    <label for="name">Nom</label>
-                    <input class="btn1" type="text" placeholder="Nom">
-                    <label for="Prenom">Prenom</label>
-                    <input class="btn1" type="text" placeholder="Prenom">
-                    <label for="email">Entre Votre addresse mail</label>
-                    <input class="btn1" type="email" name="email" id="email" placeholder="email">
-                </form>
-            </div>
 
 
-        </section>
+                <!---- section carousel --->
+            </section>
+            <section class="carousel">
+                <div>
+                    <img src="./img/piscine-champdepere-bis.jpg" alt="" height="100px">
+                </div>
+            </section>
+
+            <!--Réservez vos vacances -->
+            <section class="container-2">
+
+                <div>
+                    <h1>Réservez vos prochaines vacances en toute simplicité</h1>
+                </div>
+                <div>
+                    <img class="img-logo" src="./img/icons_holiday.png" alt="" height="50px">
+                </div>
+
+                <div class="container">
+                    <h3>Planifier vos vacances n'a jamais été aussi simple</h3>
+                    <p>Plutôt que de chercher pendant des heures sur d’innombrables sites internet, comparez et
+                        économisez
+                        avec MaisonDeVacances, qui vous dévoile les meilleures promotions du moment pour voyager au
+                        meilleur
+                        prix.</p>
+                </div>
+                <div>
+                    <img class="img-logo" src="./img/icons_holiday.png" alt="" height="50px">
+                </div>
+
+                <div class="container">
+                    <h3>Planifier vos vacances n'a jamais été aussi simple</h3>
+                    <p>Plutôt que de chercher pendant des heures sur d’innombrables sites internet, comparez et
+                        économisez
+                        avec MaisonDeVacances, qui vous dévoile les meilleures promotions du moment pour voyager au
+                        meilleur
+                        prix.</p>
+                </div>
+
+                <div>
+                    <img class="img-logo" src="./img/icons_holiday.png" alt="" height="50px">
+                </div>
+
+                <div class="container">
+                    <h3>Planifier vos vacances n'a jamais été aussi simple</h3>
+                    <p>Plutôt que de chercher pendant des heures sur d’innombrables sites internet, comparez et
+                        économisez
+                        avec MaisonDeVacances, qui vous dévoile les meilleures promotions du moment pour voyager au
+                        meilleur
+                        prix.</p>
+                </div>
+                <div>
+                    <form action="#"></form>
+                    <label for="btn"></label>
+                    <input class="btn1" type="submit" value="Chercher">
+                </div>
+
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h1>Contact</h1>
+                </div>
+                <div class="formulaire">
+                    <form action="#" method="post">
+                        <label for="name">Nom</label>
+                        <input class="btn1" type="text" placeholder="Nom">
+                        <label for="Prenom">Prenom</label>
+                        <input class="btn1" type="text" placeholder="Prenom">
+                        <label for="email">Entre Votre addresse mail</label>
+                        <input class="btn1" type="email" name="email" id="email" placeholder="email">
+                        <label for="submit"></label>
+                        <input class="btn1" type="submit" value="Envoyer">
+                    </form>
+                </div>
 
 
-    </main>
-    <footer>
-        <div class="footer">
-            <p>formulaire</p>
-        </div>
-    </footer>
+            </section>
+
+
+        </main>
+        <footer>
+            <div class="footer">
+                <p>formulaire</p>
+            </div>
+        </footer>
 
 
 </body>
+<script src="./btn-burgur.js"></script>
 
 </html>
