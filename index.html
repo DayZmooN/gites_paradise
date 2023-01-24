@@ -20,24 +20,18 @@
                         <a href="#"><img src="./img/burger.png" alt="burger"></a>
                     </div>
                 </div>
-                <div>
-                    <nav id="menu">
-                        <div id="crois">
-                            <a href="#"><img src="./img/crois.png"" alt=" crois"></a>
-                        </div>
-                        <ul>
-                            <li><a href="#">Nos Offres</a></li>
-                            <li><a href="">Déposer</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="#">Se Connecter</a></li>
-                        </ul>
+                <nav id="menu">
+                    <div id="crois">
+                        <a href="#"><img src="./img/crois.png"" alt=" crois"></a>
+                    </div>
+                    <ul>
+                        <li><a href="#">Nos Offres</a></li>
+                        <li><a href="">Déposer</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="#">Se Connecter</a></li>
+                    </ul>
+                </nav>
 
-
-                    </nav>
-
-
-
-                </div>
             </div>
         </div>
 
@@ -58,26 +52,28 @@
 
             <section class="seachbar">
                 <h1>Nos Gites en france</h1>
-                <form action="#" method="post">
-                    <div class="card-logo logo">
-                        <div class="float-logo">
-                            <label for=" pays">Region</label>
-                            <input class="btn1" type=" text" placeholder="France" img src>
+                <fieldset>
+                    <form action="#" method="post">
+                        <div class="card-logo logo">
+                            <div class="float-logo">
+                                <label for=" pays">Region</label>
+                                <input class="btn1" type=" text" placeholder="France" img src>
+                            </div>
+                            <div>
+                                <label for="start">Dates</label>
+                                <input class="btn1" type="date" name="dates" id="start">
+                            </div>
+                            <div>
+                                <label for="nbp">Nombre de personnes</label>
+                                <input class="btn1" type="number" name="nbp" id="nbp" placeholder="Nombre de personnes">
+                            </div>
                         </div>
-                        <div>
-                            <label for="start">Dates</label>
-                            <input class="btn1" type="date" name="dates" id="start">
-                        </div>
-                        <div>
-                            <label for="nbp">Nombre de personnes</label>
-                            <input class="btn1" type="number" name="nbp" id="nbp" placeholder="Nombre de personnes">
-                        </div>
-                    </div>
 
 
-                </form>
-                <label for="btn"></label>
-                <input class="btn1" type="submit" value="Envoyer">
+                    </form>
+                    <label for="btn"></label>
+                    <input class="btn1" type="submit" value="Envoyer">
+                </fieldset>
             </section>
 
             <section id="grid-tendance">
@@ -162,7 +158,7 @@
 
             <section class="carousel">
                 <div>
-                    <img src="./img/piscine-champdepere-bis.jpg" alt="" height="100vh">
+                    <img src="./img/piscine-champdepere-bis.jpg" alt="">
                 </div>
             </section>
 
@@ -172,45 +168,51 @@
                 <div>
                     <h1>Réservez vos prochaines vacances en toute simplicité</h1>
                 </div>
-                <div>
-                    <img class="img-logo" src="./img/icons_holiday.png" alt="" height="50px">
-                </div>
-
-                <div class="container-card">
-                    <h3>Planifier vos vacances <br> n'a jamais été aussi simple</h3>
-                    <p>Plutôt que de chercher pendant des heures sur d’innombrables sites internet, comparez et
-                        économisez
-                        avec MaisonDeVacances, qui vous dévoile les meilleures promotions du moment pour voyager au
-                        meilleur
-                        prix.</p>
-
-                </div>
-
-                <div>
-                    <img class="img-logo" src="./img/icons_mouse.png" alt="" height="50px">
-                </div>
-                <div class="container-card">
+                <div class="cards">
 
 
-                    <h3>Planifier vos vacances n'a jamais été aussi simple</h3>
-                    <p>Plutôt que de chercher pendant des heures sur d’innombrables sites internet, comparez et
-                        économisez
-                        avec MaisonDeVacances, qui vous dévoile les meilleures promotions du moment pour voyager au
-                        meilleur
-                        prix.</p>
-                </div>
+
+                    <div class="container-card">
+                        <div class="img-logo">
+                            <img src="./img/icons_holiday.png" alt="" height="50px">
+                        </div>
+                        <h3>Planifier vos vacances <br> n'a jamais été aussi simple</h3>
+                        <p>Plutôt que de chercher pendant des heures sur d’innombrables sites internet, comparez et
+                            économisez
+                            avec MaisonDeVacances, qui vous dévoile les meilleures promotions du moment pour voyager au
+                            meilleur
+                            prix.</p>
+
+                    </div>
 
 
-                <div>
-                    <img class="img-logo" src="./img/icons_price.png" alt="" height="50px">
-                </div>
-                <div class="container-card">
-                    <h3>Planifier vos vacances n'a jamais été aussi simple</h3>
-                    <p>Plutôt que de chercher pendant des heures sur d’innombrables sites internet, comparez et
-                        économisez
-                        avec MaisonDeVacances, qui vous dévoile les meilleures promotions du moment pour voyager au
-                        meilleur
-                        prix.</p>
+                    <div class="container-card">
+                        <div class="img-logo">
+                            <img src="./img/icons_mouse.png" alt="" height="50px">
+                        </div>
+
+
+                        <h3>Planifier vos vacances n'a jamais été aussi simple</h3>
+                        <p>Plutôt que de chercher pendant des heures sur d’innombrables sites internet, comparez et
+                            économisez
+                            avec MaisonDeVacances, qui vous dévoile les meilleures promotions du moment pour voyager au
+                            meilleur
+                            prix.</p>
+                    </div>
+
+
+
+                    <div class="container-card">
+                        <div class="img-logo">
+                            <img src="./img/icons_price.png" alt="" height="50px">
+                        </div>
+                        <h3>Planifier vos vacances n'a jamais été aussi simple</h3>
+                        <p>Plutôt que de chercher pendant des heures sur d’innombrables sites internet, comparez et
+                            économisez
+                            avec MaisonDeVacances, qui vous dévoile les meilleures promotions du moment pour voyager au
+                            meilleur
+                            prix.</p>
+                    </div>
                 </div>
                 <div>
                     <form action="#"></form>
@@ -219,6 +221,7 @@
                 </div>
 
                 </div>
+
             </section>
 
             <section>
@@ -227,14 +230,20 @@
                 </div>
                 <div class="formulaire">
                     <form action="#" method="post">
-                        <label for="name">Nom</label>
-                        <input class="btn1" type="text" placeholder="Nom">
-                        <label for="Prenom">Prenom</label>
-                        <input class="btn1" type="text" placeholder="Prenom">
-                        <label for="email">Entre Votre addresse mail</label>
-                        <input class="btn1" type="email" name="email" id="email" placeholder="email">
-                        <label for="submit"></label>
-                        <input class="btn1" type="submit" value="Envoyer">
+                        <div class="flex">
+                            <label for="name">Nom</label>
+                            <input class="btn1" type="text" placeholder="Nom">
+                            <label for="Prenom">Prenom</label>
+                            <input class="btn1" type="text" placeholder="Prenom">
+
+                            <label for="email">Entre Votre addresse mail</label>
+                            <input class="btn1" type="email" name="email" id="email" placeholder="email">
+                        </div>
+
+                        <div class="tableau">
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            <label for="submit"></label>
+                            <input class="btn1" type="submit" value="Envoyer">
                     </form>
                 </div>
 
