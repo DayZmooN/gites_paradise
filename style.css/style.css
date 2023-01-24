@@ -10,7 +10,7 @@
     width: 100%;
     align-items: center;
 }
-.navbar{
+/* .navbar{
     background-color: #ffffff;
     width: 100%;
     align-items: center;
@@ -18,14 +18,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
     position: relative;
 
-}
+} */
 body{
     min-width: 100%;
     object-fit: cover;
 
 }
 .row-limit-size{
-    width: 100%;
+    width: 100% ;
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -38,10 +38,10 @@ body{
     display: block;
     transition: .1S all ease-in-out;
     background-color:rgb(255, 255, 255);
-
-
+    overflow: auto;
 }
 #menu{
+    margin: 0 auto;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -54,18 +54,18 @@ body{
 
 }
 
-nav ul li{
+ nav ul li{
     display: block;
     flex-direction: column;
     text-align: center;
     margin: 100px;
 
-}
+} 
 nav ul li a {
     font-size: 1.5rem;
     font-size: 2rem;
-}
- #burger{
+} 
+  #burger{
     display: block;
     position: absolute;
     right: 10px;
@@ -78,7 +78,7 @@ nav ul li a {
     top: 0 ;
     width: 100%;
     position: relative;
-}
+} 
 
 #burger img{
     width: 45px;
@@ -188,7 +188,7 @@ h1{
 
     
 }
-@media screen and (max-width:390px) {
+/* @media screen and (max-width:390px) {
     body{
         width: 100%;
     }
@@ -209,7 +209,7 @@ h1{
     }
 
     
-}
+} */
 
 
 
@@ -404,16 +404,61 @@ form .card-logo input .btn1:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
 } */
+
+
+
 /* section carousel */
-.carousel{
+/* .carousel{
     margin: 400px auto;
 }
 .carousel img{
     width: 95%;
     height: 100%;
-}
+} */
+.container {
+    max-width: 700px;
+    width: 100%;
+    margin: 150px auto;
+    padding: 50px;
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .slider img {
+    max-width: 100%;
+    display: none;
+  }
+  img.active {
+    display: block;
+    animation: fade 0.8s;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .cont-btn {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+  }
+  .btn-nav {
+    font-size: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+  }
+
+
+
 /* section reservez vos prochaine vacances */
-.container-2{
+ .container-2{
     margin: 50px auto ;
     background-color: #fff ;
     align-items: center;
@@ -448,7 +493,8 @@ form .card-logo input .btn1:hover {
     color: #f2f2f3be;    
     text-align: center;
 
-}
+} 
+
 
 
 /* Formulaire */
@@ -506,41 +552,48 @@ footer p{
 
 @media screen and (min-width:950px){
     /* header et navbar menu */
-    header{
+ 
+    #header{
         width: 100%;
     }
 
-
     .navbar {
         width: 100%;
-        height: 70px;
-        display: block;
+
         box-shadow: 4px 4px 4px rgba(12, 20, 89, 0.35);
 
 
     }
-    #menu ul {
+
+
+    #menu{
+        width: 100%;
+        display: flex;
+        height: 100px;
         flex-direction: row;
+        justify-content: right;
+        transition: .1S all ease-in-out;
+        background-color:rgba(255, 255, 255, 0);
     }
     #menu{
-        display: none;
-        
+        transition: all .1s ease-in-out;
+        top: 0;
+        height: 70px;
+        overflow:inherit;
+    
     }
 
+
      .row-limit-size {
-        display: block;
-        margin: 0;
+        display: flex;
         top:0;
         width: 100%;
-        height: 70px;
         box-shadow: 0px 4px 6px rgba(12, 20, 89, 0.45);
 
         
     }
     nav ul{ 
         display: flex;
-        height: 139px;
-
     }
 
 
@@ -550,8 +603,6 @@ footer p{
 
     .logo{
         top: 25px;
-        margin-left: 10px;
-        padding: 0px ;
     }
     .logo img {
         width: 50px;
@@ -564,11 +615,10 @@ footer p{
         color:#1F4096;
     }
     #burger{
-        display: block;
-        backface-visibility: hidden;
+        display: none;
     }
      #crois{
-        display: block;
+        display: none;
 
      }
 
@@ -680,7 +730,7 @@ footer p{
         height: 40px;
         margin: 10px auto ;
         border: 1px solid #a69a9a;
-        border-radius: 0px 0 0px 0;
+        border-radius: 1px 0 1px 0;
         padding: 0px;
     }
     /* GITES EN TANDENCE */
@@ -695,6 +745,7 @@ footer p{
     .grid{
         display: grid;
         width: 99%;
+        height: 100%;
         gap: 3rem;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         justify-items: start;
@@ -775,13 +826,55 @@ footer p{
     
 
     /* section carousel */
-    .carousel{
+    /* .carousel{
         margin: 400px auto;
     }
     .carousel img{
-        width: 95%;
+        width: 55%;
         height: 100%;
-    }
+    } */
+
+ 
+      
+      body {
+        background: #f1f1f1;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px;
+      }
+      
+      .slider img {
+        max-width: 100%;
+        display: none;
+      }
+      img.active {
+        display: block;
+        animation: fade 0.8s;
+      }
+      @keyframes fade {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+      .cont-btn {
+        width: 100%;
+        height: auto;
+        border: 1px solid #000;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+        display: flex;
+        justify-content: center;
+      }
+      .btn-nav {
+        font-size: 50px;
+        margin: 0 15px;
+        cursor: pointer;
+      }
 
     
     /* section reservez vos prochaine vacances */
@@ -811,6 +904,7 @@ footer p{
     }
     .cards{
         display: flex;
+        justify-content: center;
     }
     .img-logo img{
         margin-top: 10px ;
@@ -867,9 +961,9 @@ footer p{
         font-size: 2rem;
         justify-content: center;
         color: #1F4096;
-        display: flex;
     }
     .formulaire input {
+        width: 90%;
         color: #fff;
         text-align: center;
         display: flex;
@@ -883,11 +977,17 @@ footer p{
         opacity: 1;
     }
     #message{
-        width: 800px;
+        width: 60%;
         margin: 20px auto;
+        background-color: #1F4096;
+        color: #fff;
+        font: bolder;
+        font-size: 2rem;
     }
     .flex{
+        margin-top: 200px;
         display: flex;
+        align-items: center;
     }
     #email{
         top: 0;
