@@ -1,47 +1,31 @@
-const items = document.querySelectorAll('img');
-const nbSlide = items.length;
-const suivant = document.querySelector('.right');
-const precedent = document.querySelector('.left');
-let count = 0;
+let rightArrow = document.getElementById('right');
+let leftArrow = document.getElementById('left')
+let listSlide = document.getElementById('slider');
 
-function slideSuivante() {
-    items[count].classList.remove('active');
+let mLeft = '0';
 
-    if (count < nbSlide - 1) {
-        count++;
-    } else {
-        count = 0;
+
+
+
+
+
+rightArrow.addEventListener('click', function () {
+
+    if (mLeft - 500 >= -2000) {
+        mLeft -= 500;
+
+        listSlide.style.marginLeft = mLeft + 'px';
     }
 
-    items[count].classList.add('active')
-    console.log(count);
-
-}
-suivant.addEventListener('click', slideSuivante)
+});
 
 
-function slidePrecedente() {
-    items[count].classList.remove('active');
+leftArrow.addEventListener('click', function () {
 
-    if (count > 0) {
-        count--;
-    } else {
-        count = nbSlide - 1;
+    if (mLeft + 500 <= 0) {
+        mLeft += 500;
+
+        listSlide.style.marginLeft = mLeft + 'px';
     }
 
-    items[count].classList.add('active')
-    // console.log(count);
-
-}
-precedent.addEventListener('click', slidePrecedente)
-
-function keyPress(e) {
-    console.log(e);
-
-    if (e.keyCode === 37) {
-        slidePrecedente();
-    } else if (e.keyCode === 39) {
-        slideSuivante();
-    }
-}
-document.addEventListener('keydown', keyPress)
+});

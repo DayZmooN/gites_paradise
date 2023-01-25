@@ -140,6 +140,7 @@ h1{
     /* background-color: #fff; */
     text-shadow: 0px 2px 2px #05163f;
     font-size: 2rem;
+    margin: 30px;
  
 }
 .first-main {
@@ -258,9 +259,9 @@ form .card-logo input .btn1:hover {
 .btn1{
     width: 150px;
     height: 40px;
-    margin: 10px auto ;
+    margin: 30px auto ;
+    display: block;
     border: 2px solid #1F4096;
-    border-radius: 10px 0 10px 0;
     padding: 0px;
 }
 /* GITES EN TANDENCE */
@@ -301,7 +302,8 @@ form .card-logo input .btn1:hover {
 }
 .card-img img{
     margin-top: 5px ;
-    width: 95%;
+    width: 90%;
+    height: 50%;
     background-size: cover;
 
 }
@@ -330,7 +332,7 @@ form .card-logo input .btn1:hover {
     padding: 1rem;
     font-size: 1.6rem;
     text-align: center;
-    color: #3363ff;
+    color: #ffffff;
     background-color: #1F4096;
     border: none;
     border-radius: 0.4rem;
@@ -347,6 +349,7 @@ form .card-logo input .btn1:hover {
 .card-btn:hover,
 .card-btn:active{
     background-color: #c2cffc;
+    color: #b34408;
 
 }
 .card-btn:hover span, .card-btn:active span{
@@ -473,10 +476,11 @@ form .card-logo input .btn1:hover {
     margin: 6rem auto;
     background-color: #05163f;
     border-radius: 0.4rem;
-    height: 16rem;
+    height: 100%;
     border: none;
     border-radius: 1.5rem;
     box-shadow: 0 4rem 8rem rgba(255, 255, 255, 0.5);
+    padding: 10px;
 }
 .img-logo{
     margin-top: 40px auto;
@@ -498,7 +502,7 @@ form .card-logo input .btn1:hover {
 
 
 /* Formulaire */
-.formulaire{
+/* .formulaire{
     width: 100%;
     margin: 100px auto;
     justify-content: center;
@@ -532,7 +536,135 @@ input::placeholder{
     color: #ffffff;
     text-align: center;
     opacity: 1;
+} */
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
 }
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("/img/gites.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(10px);
+	z-index: -1;
+    
+
+}
+.container:hover{
+    box-shadow: 0 4rem 8rem rgba(15, 24, 210, 0.5);
+    transform: scale(1.1);
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("/img/ian-keefe-OgcJIKRnRC8-unsplash.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #1F4096;
+}
+
+.text{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.text:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #05163f;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	cursor: pointer;
+	transition: .5s all ease-in-out;
+}
+
+.btn:hover{
+    background-color: #f2f2f3;
+    border: 1px solid #3363ff;
+    color: #3363ff;
+}
+textarea{
+    resize: none;
+}
+
+.text:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+.contact-box{
+    grid-template-columns: 1fr;
+}
+.left{
+    height: 200px;
+}
+
+
 
 /* footer */
 footer{
@@ -542,6 +674,16 @@ footer{
 }
 footer p{
     color: #ffffff;
+}
+.footer-logo  {
+    position: absolute;
+    right: 0;
+    
+    
+
+}
+.footer-logo img{
+    margin-right: 20px;
 }
 
 
@@ -567,20 +709,14 @@ footer p{
 
     #menu{
         top: 0;
-        height: 70px;
         display: block;
         transition: .1S all ease-in-out;
-        background-color:rgba(255, 255, 255, 0);
         z-index: 999;
-    }
-    #menu{
-        transition: all .1s ease-in-out;
+        transition: all .5s ease-in-out;
         height: 70px;
         overflow:inherit;
-        box-shadow: 0px 4px 6px rgba(12, 20, 89, 0.45);
-    
+        box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.45);
     }
-
 
      .row-limit-size {
         top:0;
@@ -588,17 +724,20 @@ footer p{
         flex-direction: row;
         height: 70px;
         background-color: #fff;
-        box-shadow: 4px 4px 2px rgb(255, 255, 255);
     }
     nav ul{ 
         margin: 21px 30px ;
         display: flex;
         justify-content: end;
+        transition: .5s all ease-in-out;
+        
         
     }
     nav ul li {
         margin:0 10px;
         font-size: 1rem;
+        top: 0;
+        transform: translateY(5px);
 
     }
     nav ul li a:hover {
@@ -616,8 +755,6 @@ footer p{
 
     }
     #last-child {
-
-
         color: white;
         background-color: #1F4096;
 
@@ -630,7 +767,8 @@ footer p{
 
         color: #3363ff;
         background-color: #ffffff;
-        box-shadow: 1px 4px 2px rgb(15, 23, 95);
+                box-shadow: 1px 4px 2px rgb(12, 20, 89);
+
 
     }
 
@@ -696,7 +834,7 @@ footer p{
     }
     .first-main {
         display: block;
-        background-image: url(../img/ian-keefe-OgcJIKRnRC8-unsplash.jpg);
+        background-image: url(../img/d1b6ed_fa5865dd8969435cb479b6ccc062ed49_mv2.jpg);
         width: 100%;
         height: 80vh;
         top: 0;
@@ -705,7 +843,7 @@ footer p{
         object-fit: cover;
         background-position: center;
         align-items: center;
-        margin-bottom:15%;
+        margin-bottom:9% auto;
         transform: translateY(-0.5%);
         box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
     
@@ -717,7 +855,7 @@ footer p{
         text-shadow: 6px 2px 2px #05163f;
         font-size: 5rem;
         margin: 15% auto  ;
-        text-align: center ;
+        text-align: left ;
         align-items: center;
     
     }
@@ -725,31 +863,35 @@ footer p{
     /* barre de seach nos gites en france  */
     .seachbar {
         align-items: center;
-        width: 80%;
+        width: 99%;
         margin: 10px auto ;
-        height: 500px;
+        height: 50rem;
+        transition: .5s all ease-in-out;
         
     }
     .seachbar:hover{
         transform: translateY(-1.5%);
         box-shadow: 0 4rem 8rem rgba(30, 76, 160, 0.5);
+        border-radius: 19px 19px 19px 19px;
+        width: 80%;
     }
     .seachbar h1{
-        margin: 6rem auto;
+        margin: 7rem auto;
+        font-size: 6rem;
     }
     fieldset{
         border: none;
-    }
-    .card-logo{
         width: 100%;
+        height: 100%;
     }
+   
+    
     .card-logo{
         margin: 0 auto;
-    }
-    .card-logo{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        
     }
     form .card-logo input {
         text-align: center;
@@ -758,30 +900,56 @@ footer p{
         display: flex;
         margin: 0;
         
+        
     }
-    form .card-logo input .btn1:hover {
+    .btn{
+        height: 40px;
+        margin: 0px auto ;
+        border: 1px solid #ffffff;
+        border-radius: 1px 0 1px 0;
+        padding: 0px;
+
+    }
+    form .card-logo input .btn:hover {
     
         text-align: center;
         background-color: #f2f2f3;
         color: #1F4096;
-        transform: scale(1.1);
+        transform: scale(1);
         color: #f2f2f3;
+        width: 150px;
+        margin: 20px auto ;
     }
     
     
-    .seachbar .btn, .btn1 {
+    /* section.seachbar .btn, .btn1 {
         cursor: pointer;
         color: #fff;
         background-color: #1F4096;
-        width: 150px;
-    }
+        
+    } */
     .btn1{
         width: 276px;
         height: 40px;
-        margin: 10px auto ;
+        margin: 100px auto  ;
         border: 1px solid #a69a9a;
-        border-radius: 1px 0 1px 0;
+        font-size: 1.5rem;
         padding: 0px;
+        border-radius: 1px 0 1px 0;
+    }
+    .btn1:hover{
+        height: 40px;
+        margin: 10px auto ;
+        border: 1px solid #1a41c1;
+        background-color: #f1f1f1;
+        color:#1F4096;
+        border-radius: 1px 0 1px 0;
+        font-size: 2rem;
+        transform: scale(1.2);
+    }
+    .logo:hover{
+        transform: scale(1);
+
     }
     /* GITES EN TANDENCE */
     #grid-tendance{
@@ -790,7 +958,7 @@ footer p{
         align-items: center;
     }
     #grid-tendance h1{
-        margin: 100px;
+        margin: 5%;
     }
     .grid{
         display: grid;
@@ -799,6 +967,7 @@ footer p{
         gap: 3rem;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         justify-items: start;
+        padding: 27px;
     }
     .grid-item{
         background-color: #fff;
@@ -807,12 +976,18 @@ footer p{
         box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
         cursor: pointer;
         transition: .2s;
-        margin: 0 auto;
-        width: 95%;
+        margin: 20px auto;
+        height: 100%;
+        width: 100%;
+    }
+    .grid-item img {
+        width: 100%;
+        height: 50%;
     }
     .grid-item:hover{
         transform: translateY(-0.5%);
         box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+        border-radius: 10px 10px 10px 10px ;
     }
     .card-img {
         display: block;
@@ -822,7 +997,7 @@ footer p{
     }
     .card-img img{
         margin-top: 5px ;
-        width: 95%;
+        width: 100%;
         background-size: cover;
     
     }
@@ -876,6 +1051,8 @@ footer p{
     
 
     /* section carousel */
+
+    
     /* .carousel{
         margin: 400px auto;
     }
@@ -885,13 +1062,10 @@ footer p{
     } */
 
  
-      
-      body {
-        background: #f1f1f1;
-      }
-      .container {
+    
+      /* .container {
         max-width: 800px;
-        margin: 0 auto;
+        margin: 30% auto;
         padding: 50px;
       }
       
@@ -924,7 +1098,7 @@ footer p{
         font-size: 50px;
         margin: 0 15px;
         cursor: pointer;
-      }
+      } */
 
     
     /* section reservez vos prochaine vacances */
@@ -944,13 +1118,21 @@ footer p{
         width: 600px;
         margin: 50px   ;
         box-sizing: border-box;
-        background-color: #05163f92;
+        background-color: #05163f;
         border-radius: 0.4rem;
         height: 25rem;
         border: none;
         border-radius: 1.5rem;
         box-shadow: 0 4rem 8rem rgba(255, 255, 255, 0.5);
-        border:1px solid red;
+        padding: 10px;
+    }
+    .container-card:hover{
+        box-shadow: 0 2rem 6rem rgb(21, 34, 185);
+        transform: translateY(-0.5%);
+        transition: .2s all ease-in;
+
+
+
     }
     .cards{
         display: flex;
@@ -976,17 +1158,14 @@ footer p{
     
     
     /* Formulaire */
-    .formulaire{
+    /* .formulaire{
         width: 100%;
-        margin: 100px auto;
+        margin:100px auto;
         justify-content: center;
-        flex-direction: row;
+        background-color: rgb(248, 248, 248);
+        box-shadow: 1px 1px 6px #05163f ;
     }
-  
-    .formulaire{
-        background-color: #f2f2f3;
-    }
-    .formulaire input{
+     .formulaire input{
         background-color: #1F4096;
         color: #f2f2f3;
         font: bolder;
@@ -997,14 +1176,13 @@ footer p{
         color: #f2f2f3;
         font: bolder;
         transform: scale(1.1);
-        box-shadow: 1px 1px 6px #05163f ;
+        
 
     }
  
     label{
         margin: 30px ;
         font-size: 2rem;
-        justify-content: center;
         color: #1F4096;
     }
     #email{
@@ -1017,9 +1195,7 @@ footer p{
     }
     .formulaire input {
         color: #fff;
-        text-align: center;
-        display: flex;
-        justify-content: center;
+        display: block;
         font: bolder;
         transform: scale(1.1);
     }
@@ -1027,10 +1203,10 @@ footer p{
         color: #ffffff;
         text-align: center;
         opacity: 1;
-    }
-    #message{
-        width: 60%;
-        margin: 20px auto;
+    } 
+     #message{
+        width: 50%;
+        margin: 20px ;
         background-color: #fff;
         color: #1F4096;
         font: bolder;
@@ -1047,9 +1223,6 @@ footer p{
     }
     .flex{
         margin-top: 200px;
-        display: flex;
-        align-items: center;
-        width: 95%;
     }
 
  
@@ -1068,16 +1241,138 @@ footer p{
 
     textarea{
         resize: none;
+    } */
+
+    .container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 64px;
     }
+    
+    .container:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: url("/img/Couleurs-vacances-1100x732.jpg") no-repeat center;
+        background-size: cover;
+        filter: blur(5px);
+        z-index: -1;
+    }
+    .contact-box{
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    }
+    
+    .left{
+        background: url("/img/pexels-tansu-topuzoglu-10206271.jpg") no-repeat center;
+        background-size: cover;
+        height: 100%;
+    }
+    
+    .right{
+        padding: 25px 40px;
+    }
+    
+    h2{
+        position: relative;
+        padding: 0 0 10px;
+        margin-bottom: 10px;
+    }
+    
+    h2:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50px;
+        border-radius: 2px;
+        background-color: #1F4096;
+    }
+    
+    .text{
+        width: 100%;
+        border: 2px solid rgba(0, 0, 0, 0);
+        outline: none;
+        background-color: rgba(230, 230, 230, 0.6);
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+        transition: .3s;
+    }
+    
+    .text:hover{
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    textarea{
+        min-height: 150px;
+    }
+    
+    .btn{
+        width: 100%;
+        padding: 0.5rem 1rem;
+        background-color: #05163f;
+        color: #fff;
+        font-size: 1.1rem;
+        border: none;
+        cursor: pointer;
+        transition: .5s all ease-in-out;
+    }
+    
+    .btn:hover{
+        background-color: #f2f2f3;
+        border: 1px solid #3363ff;
+        color: #3363ff;
+    }
+    textarea{
+        resize: none;
+    }
+    
+    .text:focus{
+        border: 2px solid rgba(30,85,250,0.47);
+        background-color: #fff;
+    }
+    
+    @media screen and (max-width: 880px){
+        .contact-box{
+            grid-template-columns: 1fr;
+        }
+        .left{
+            height: 200px;
+        }
+    }
+
 
     /* footer */
     footer{
-        background-color: #1F4096;
-        height: 100px;
+        background-color: #000000;
+        height: 200px;
         width: 100%;
     }
     footer p{
         color: #ffffff;
     }
 
+}
+
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+
+    
 }
